@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar turno</title>
+    <link rel="shortcut icon" href="img/logocfcicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="enlace">
+                <img src="img/logocfc.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html ">Institucional</a>
+                    <a href="#especialidades">Especialidades</a>
+                    <a href="#">Tratamientos</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="turno.html">Solicitar turno</a>
+
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    
+
+    <h1>Solicitar Turno</h1>
+            <section class="turnero">
+                
+            <form id="formularioturno" class="formulario">
+                
+                <div class="box-input">
+                    <input name="nombre" id="nombre" type="text" required>
+                    <span data-placeholder="Nombre y apellido"></span>
+                </div>
+                <div class="box-input">
+                    <input name="tel" id="tel" type="tel" required>
+                    <span data-placeholder="Telefono de contacto"></span>
+                </div>
+
+                <div class="box-input">
+                
+                <select name="profesional" id="profesional">
+                    <option selected disabled>Profesional</option>
+                    <option value="Jose-Saavedra">Dr. Saavedra José</option>
+                    <option value="Maxi-Saavedra">Dr. Saavedra Maximiliano</option>
+                </select>
+                </div>
+
+                <div class="box-input">
+                    
+                    <select name="tipo-turno" id="tipo-turno">
+                        <option selected disabled>Tipo de turno</option>
+                        <option value="primer-consulta">Primer consulta</option>
+                        <option value="control">Control</option>
+                    </select>
+                    </div>
+
+                    <div class="box-input">
+                        
+                        <select name="horario" id="horario">
+                            <option selected disabled>Horario preferido</option>
+                            <option value="mañana">Mañana</option>
+                            <option value="tarde">Tarde</option>
+                        </select>
+                        </div>
+
+                <div class="box-input">
+                    <input name="consulta" id="consulta" type="text" required>
+                    <span data-placeholder="Escriba su consulta"></span>
+                </div>
+
+
+                <button id="submit1" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Solicitar turno</button>
+            </form>
+
+
+        </section>
+        
+        <script type="text/javascript">
+            $(".box-input input").on("focus", function(){
+                $(this).addClass("focus");
+            });
+    
+            $(".box-input input").on("blur", function(){
+                if($(this).val() == ""){
+                    $(this).removeClass("focus");
+                }
+            });
+    
+        </script>
+        
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+
+
+
+       
+
+
+   
+
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Horario de atención:</h2>
+                <p>Lunes a Viernes de 8 a 20hs </p>
+                <span>
+                    Sábado de 8 a 13hs
+                </span>
+            </div>
+
+            <div class="box">
+                <h2>Visitá nuestras redes sociales</h2>
+                <div class="red-social">
+
+                    <a href="https://www.facebook.com/centroflebcordoba"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/centroflebologicocordoba/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5493516595242&text=Quiero+consultar+respecto+a&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#">
+                    <h2>Preguntas frecuentes</h2>
+                </a>
+            </div>
+
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logocfc.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+        </div>
+
+    </footer>
+
+ <script src="scripts/turnero.js"></script>
+
+</body>
+
+</html>
