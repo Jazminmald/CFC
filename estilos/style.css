@@ -1,0 +1,746 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* *****BARRA NAVEGACION******* */
+nav{
+    background-color: #89C4B2 ;
+    height: 150px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 5px 30px;
+}
+
+.logo{
+    height: 130px;
+    
+        
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+ display: inline-block;
+ line-height: 150px;
+ margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    /*text-transform: uppercase;*/
+}
+
+li a.active, li a:hover{
+    background-color: #ACDACC;
+    transition: .5s;
+    border-radius: 30px;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* ******  BANNER******/
+.banner {
+   /* background-image: url(/img/banner1.jpg);*/
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    animation: banner 9s infinite;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    
+}
+.banner h2{
+    margin-left: 4%;
+    background-color: #4b957c58;
+    border-radius: 5px;
+}
+.banner div{
+    margin-left:4%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    background-color: #4b957c58;
+    border-radius: 5px;
+}
+.banner button{
+    outline: none;
+    margin-left: 8%;
+    background-color: rgba(172, 218, 204, 0.5);
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 20px ;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear
+
+}
+.banner a{
+    color: #fff;
+}
+.banner button:hover{
+    background-color: #89C4B2;
+    transition: .5s;
+}
+.banner button:focus{
+    background-color: #80e9ca;
+}
+.banner button:active{
+    background-color: #438A70;
+}
+
+@keyframes banner {
+    0%, 30% {
+        background-image: url(/img/gale2.jpeg);
+        opacity: 1;
+    }
+   /* 31%, 34%{
+        opacity: 0.5;
+    }*/
+    35%,65%{
+        background-image: url(/img/gale3.jpeg);
+    }
+    70%, 100%{
+        background-image: url(/img/gale7.jpeg);
+    }
+
+}
+
+/* INSTITUCIONAL */
+
+.institucional{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(to bottom right, #89C4B2, #62b39b);
+    height: auto;
+    padding: 30px 90px;
+    
+    
+}
+
+.institucional .content-inst{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.institucional .content-inst img{
+    height: 400px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+.institucional .content-p p{
+    padding-bottom: 10px;
+}
+.institucional .content-p ul{
+    padding-left: 0px;
+}
+.institucional h2{
+    color: #5D5D5D;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+.butt-inst{
+    display: flex;
+    justify-content: center
+    
+}
+.institucional button{
+    outline: none;
+    margin-left: 2%;
+    background-color: #4B957C;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 20px ;
+    border-radius: 30px;
+    margin: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear
+
+}
+.institucional button:hover{
+    background-color: #62b39b;
+    transition: .5s;
+}
+.institucional button:focus{
+    background-color: #8ccab8;
+}
+.institucional button:active{
+    background-color: #438A70;
+}
+.institucional a{
+    color: #fff;
+}
+
+
+
+
+
+
+/* *****DR SAAVEDRA*****/
+
+    #drsaavedra{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: linear-gradient(to bottom left, #89C4B2, #62b39b);
+        color: #fff;
+        padding: 30px 90px;
+        
+
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        border-left: 90px;
+    }
+
+    #drsaavedra h2 {
+           
+        color: #5D5D5D;
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+
+    #drsaavedra img{
+        
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 25%;
+    }
+    #drsaavedra p{
+        padding-bottom: 20px;
+        
+    }
+
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 30px;
+
+    }
+    .imgdrsaav{
+        display: flex;
+        align-items: center;
+    }
+
+    /*ESPECIALIDADES*/
+
+    #especialidades{
+        background-color: #89C4B2;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    #especialidades h2{
+    color: #5D5D5D;
+    font-size: 50px;
+    padding: 10px 90px;
+
+}
+
+#especialidades a{
+    color: #fff;
+
+
+}
+
+    #especialidades .content-esp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 20px;
+
+    }
+    #especialidades .content-esp div{
+        display: flex;
+        background-color: #62b39b;
+        height: 200px;
+        width:250px;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+
+    /*FOOTER*/
+
+    .footer{
+        width: 100%;
+        background-color: #4B957C;
+
+    }
+    .footer .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin:auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+        padding: 45 px 0 px;
+    }
+    .footer .grupo-1 .box figure{ 
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .footer .grupo-1 .box figure img{
+        width: 150px;
+    }
+    .footer .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .footer .grupo-1 .box p{
+        color: #fff;
+        margin-bottom: 1px;
+
+    }
+    .footer .grupo-1 .box span{
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .footer .grupo-1 .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #3c7763;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+
+    @media (max-width:952px){
+        .enlace{
+            padding-left: 20px;
+        }
+    
+        nav ul li a {
+            font-size: 16px;
+        }
+        
+         
+    }
+    @media (max-width:858px){
+    
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #438A70;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+    
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0px;
+            line-height: 30px;
+    
+        }
+        nav ul li a{
+            font-size: 20px;
+            
+            
+        }
+        li a:hover, li a.active{
+            background: none;
+            color: #ACDACC;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    
+        #check:checked ~ .banner{
+            left:-100%
+        }
+
+
+        #drsaavedra {
+            
+            width: 100%;
+            height: auto;
+            display: flex;
+
+        }
+
+        .imgdrsaav{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+        .institucional{
+            align-items: center;
+        }
+        .institucional .content-inst{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .institucional h2{
+            padding-bottom: 10px;  
+            font-size: 50px;
+        }
+        
+        .institucional .content-inst img{
+        height: 200px;
+        padding-left:100px;
+        
+        }
+    
+    }
+
+    /*FROMULARIO CONTACTO*/
+.contacto{
+    padding-bottom: 50px;
+    height: 100%;
+    
+
+}
+
+    .formulario{
+        width: 560px;
+        background: #f1f1f1;
+        height: 450px;
+        padding: 80px 40px;
+        margin:50px;
+        color: #62b39b;
+        position: absolute;
+	    left: 70%;
+	    top: 60%;
+	    transform: translate(-50%, -50%);
+     
+    }
+    .ubication{
+        margin: 20px;
+        margin-left: 230px;
+    }
+    .ubication p{
+        color: #62b39b;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+
+    h1{
+        text-align: center;
+        margin-bottom: 80px;
+        color: #62b39b;
+        font-size: 60px;
+        font-weight: 600;
+        padding-top: 30px;
+    }
+    
+    .box-input{
+        border-bottom: 2px solid #adadad;
+        position: relative;
+        margin: 30px 0;
+    }
+    
+    .box-input input{
+        font-size: 16px;
+        color: #333;
+        border: none;
+        width: 100%;
+        outline: none;
+        background: none;
+        padding: 0 5px;
+        height: 40px;
+    }
+    .box-input label{
+        font-size: 16px;
+        color: #333;
+    }
+
+    .box-input select{
+        font-size: 16px;
+        color: #adadad;
+        border: none;
+        width: 100%;
+        outline: none;
+        background: none;
+        padding: 0 5px;
+        height: 40px;
+    }
+
+    .box-input span::before{
+        content: attr(data-placeholder);
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: #adadad;
+        transform: translateY(-50%);
+        z-index: -1;
+        transition: .5s;
+    }
+    
+    .box-input span::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(120deg, #3498db, #8e44ad);
+        transition: .5s;
+    }
+    
+    .focus + span::before{
+        top: -5px;
+    }
+    
+    .focus + span::after{
+        width: 100%;
+    }
+    
+    .boton{
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: #48bb78;
+        border: solid 2px #48bb78;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .boton:hover{
+        background-color: #2F855A;
+        border: solid 2px #2F855A;
+        transition: .5s;
+    }
+
+    .turnero{
+        height: 600px;
+    }
+
+    .turnero .formulario{
+        width: 560px;
+        background: #f1f1f1;
+        height: 600px;
+        padding: 80px 40px;
+        margin: 50px;
+        color: #62b39b;
+    
+	    left: 50%;
+	    top: 70%;
+	    transform: translate(-50%, -50%);
+     
+    }
+
+
+    /*GALERIA*/
+
+    .galeria h1{
+        text-align: center;
+        font-size: 400;
+        padding: 20px 0;
+        font-size: 40px;
+        color: #4B957C;
+        margin-bottom: 0px;
+    }
+
+    .linea{
+        background-color: #54af92;
+        height: 5px;
+        width: 100%;
+        display: block;
+
+    }
+
+    .content-gale{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        width: 95%;
+        margin: auto;
+        grid-gap: 10px;
+        padding: 40px 0;
+        overflow: hidden;
+    }
+
+    .content-gale > a{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-gale a:hover img{
+        filter: blur(1px);
+        transform: rotate(10deg) scale(1.3);
+    }
+    .light-box{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        transition: transform .3s ease-in-out;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+    }
+
+    .light-box img{
+        width: 75vw;
+        max-height: 80vh;
+        
+    }
+ 
+
+    .light-box:target{
+        transform: scale(1);
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: #4B957C;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50px;
+    }
+
+    .next{
+        display: block;
+        background-color: #4B957C;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .content-gale img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+
+
+    /*FLEBOLOGIA*/
+    .content-flebologia{
+        
+       
+        align-items: center;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        justify-items: center
+    }
+    .content-flebo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        background: linear-gradient(to bottom left, #b9d8cf, #62b39b);
+        color: #fff;
+        margin: 20px 0;
+        border-radius: 20px;
+
+
+    }
+
+    .content-flebo h3{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .content-flebo p {
+        padding: 20px;
+    }
+
+    .content-flebo .video {
+  
+        padding: 20px;
+    }
+    .content-flebo img{
+        width: 200px;
+        padding-bottom: 20px;
+
+
+    }
+
+    
+
