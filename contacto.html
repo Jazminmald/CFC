@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/logocfcicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="enlace">
+                <img src="img/logocfc.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="#institucional">Institucional</a>
+                    <a href="#especialidades">Especialidades</a>
+                    <a href="#">Tratamientos</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="turno.html">Solicitar turno</a>
+
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    
+
+    <h1>Contacto</h1>
+            <section class="contacto">
+               <div class="formulario">
+            <form id="formulario" >
+                <h2>Enviar consulta</h2>
+                <div class="box-input">
+                    <input name="nombre" id="nombre" type="text" required>
+                    <span data-placeholder="Nombre"></span>
+                </div>
+                <div class="box-input">
+                    <input name="tel" id="tel" type="tel" required>
+                    <span data-placeholder="Telefono de contacto"></span>
+                </div>
+                <div class="box-input">
+                    <input name="consulta" id="consulta" type="text" required>
+                    <span data-placeholder="Escriba su consulta"></span>
+                </div>
+                <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+            </form>
+        </div> 
+            <div class="ubication">
+            <p>San luis 238 PB, Córdoba Capital</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7136252388286!2d-64.19246048478023!3d-31.422015303668516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28dd3f3f06b%3A0x1df6d9f75eb69625!2sCentro%20Flebol%C3%B3gico%20C%C3%B3rdoba%20-%20Dr%20Saavedra%20Jos%C3%A9%20Horacio!5e0!3m2!1ses!2sar!4v1641220822481!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            </div>
+
+        </section>
+        
+            <script type="text/javascript">
+                $(".box-input input").on("focus", function(){
+                    $(this).addClass("focus");
+                });
+        
+                $(".box-input input").on("blur", function(){
+                    if($(this).val() == ""){
+                        $(this).removeClass("focus");
+                    }
+                });
+        
+            </script>
+        
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+
+
+
+       
+
+
+   
+
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Horario de atención:</h2>
+                <p>Lunes a Viernes de 8 a 20hs </p>
+                <span>
+                    Sábado de 8 a 13hs
+                </span>
+            </div>
+
+            <div class="box">
+                <h2>Visitá nuestras redes sociales</h2>
+                <div class="red-social">
+
+                    <a href="https://www.facebook.com/centroflebcordoba"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/centroflebologicocordoba/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5493516595242&text=Quiero+consultar+respecto+a&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#">
+                    <h2>Preguntas frecuentes</h2>
+                </a>
+            </div>
+
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logocfc.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+        </div>
+
+    </footer>
+
+ <script src="scripts/code.js"></script>
+
+</body>
+
+</html>
